@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/main.js"></script>
+    <title>map-dc</title>
+</head>
+<body>
+<div id="panel" style="">
+    <button id="ROADMAP" onclick="map.setMapTypeId(google.maps.MapTypeId.ROADMAP);">ROADMAP</button>
+    <button id="SATELLITE" onclick="map.setMapTypeId(google.maps.MapTypeId.SATELLITE);">SATELLITE</button>
+    <button id="HYBRID" onclick="map.setMapTypeId(google.maps.MapTypeId.HYBRID);">HYBRID</button>
+    <button id="TERRAIN" onclick="map.setMapTypeId(google.maps.MapTypeId.TERRAIN);">TERRAIN</button>
+</div>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+
+<script>onLoad();</script>
+</body>
+</html>
